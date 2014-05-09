@@ -8,6 +8,7 @@ class =  read.csv2(file = 'classificacao.csv', header=TRUE, row.names = 1)
 ## Carregar funções
 source("Processa.R")
 source("CalculaIndice.R")
+source("CalculaIndiceIndividual.R")
 
 ## Criar constantes convenientes
 n_pergunta = ncol(rawdata)
@@ -51,10 +52,22 @@ respostas_dim = lapply(dimensoes, function(x) colSums(x))
 
 
 ## Calcular Índice de sustentabilidade
-indice = CalculaIndice(dimensoes)
-print(indice)
+indice_total = CalculaIndice(dimensoes)
+print(indice_total)
 
 ## Escrever uma tabela com o resultado dos índices
+write.csv2(indice_total, file = 'indice_sustentabilidade_total.csv')
+
+
+indice_individual = CalculaIndiceIndividual(data)
+## Escrever uma tabela com o resultado dos índices
+write.csv2(indice_individual, file = 'indice_sustentabilidade_individual.csv')
+
+
+indice = rbind(indice_individual,indice_total)
+rownames(indice)[nrow(indice)] = 'Total'
+
+## Escrever uma tabela com o resultado agregado dos índices individuais e total.
 write.csv2(indice, file = 'indice_sustentabilidade.csv')
 
 # Logo abaixo segue outro modo de calcular o indice de sustentabilidade.
