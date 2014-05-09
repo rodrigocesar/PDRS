@@ -1,0 +1,31 @@
+;Invertido;Dimensao
+Possui telefone celular?;0;Social
+Participa de alguma associação, cooperativa ou sindicato?;0;Social
+Possui automóvel de passeio?;0;Social
+Possui convênio médico ou plano de saúde?;0;Social
+Está satisfeito em morar na zona rural?;0;Social
+A família está satisfeita em morar na zona rural?;0;Social
+Tem filhos que moram na Zona Urbana?;1;Social
+Pretende permanecer na zona rural?  ;0;Social
+Planeja melhorias para a propriedade nesse ano?;0;Social
+Participa ou já participou de algum curso para melhoria da produção?  ;0;Social
+As atividades desenvolvidas geram lucro?;0;Econômico
+Comercializa mais de um produto?;0;Econômico
+Empregados são registrados?;0;Econômico
+Possui trator ou outro maquinário agrícola?;0;Econômico
+Mudaria de atividade produtiva caso houvessem melhores oportunidades de rentabilidade?;0;Econômico
+Já acessou crédito rural?;0;Econômico
+Conta com assistência técnica?;0;Econômico
+A principal renda familiar depende da produção ou atividade da propriedade?;0;Econômico
+Utiliza mão de obra familiar?;0;Econômico
+Possui outras fontes de renda fora da propriedade?;1;Econômico
+Possui nascentes ou curso d’água na propriedade?;0;Ambiental
+Resíduos e embalagens de agrotóxicos são devolvidos nos pontos de compra?;0;Ambiental
+Utiliza equipamentos de segurança?;0;Ambiental
+Tem conhecimento sobre o Código Florestal?;0;Ambiental
+Gostaria de reflorestar alguma área da propriedade?;0;Ambiental
+Utiliza fossa séptica?;0;Ambiental
+Utiliza agrotóxicos ou defensivos agrícolas?;1;Ambiental
+Utiliza adubos químicos?;1;Ambiental
+Já recebeu notificação ambiental?;1;Ambiental
+Há áreas de erosão ou voçorocas na propriedade?;1;Ambiental
