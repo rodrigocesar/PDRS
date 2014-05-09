@@ -55,6 +55,7 @@ indice = CalculaIndice(dimensoes)
 print(indice)
 
 ## Escrever uma tabela com o resultado dos índices
+write.csv2(indice, file = 'indice_sustentabilidade.csv')
 
 # Logo abaixo segue outro modo de calcular o indice de sustentabilidade.
 #sustenta_index = lapply(respostas_dim, function(x) sum(x)/(length(x)*n_questionario ) )
