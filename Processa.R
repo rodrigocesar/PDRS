@@ -30,6 +30,14 @@ Processa <- function(rawdata, invert_index){
     }    
   }
   
+  ## Acoplar os dados da pesquisa com o nome das variaveis (coluna) em um 
+  # data frame
+  
+  dataframe = data.frame(data)
+  colnames(dataframe) = colnames(rawdata)
+  rownames(dataframe) = rownames(rawdata)
+  
+  
       
-  return(data)
+  return(dataframe)
 }
